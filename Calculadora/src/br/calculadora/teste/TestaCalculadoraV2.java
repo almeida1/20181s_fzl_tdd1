@@ -23,7 +23,7 @@ public class TestaCalculadoraV2 {
 	 		//cenario
 	 		String parcela = "1,X";
 	 		//acao
-	        CalculadoraString.soma("1,X");
+	        CalculadoraString.soma(parcela);
 	        //verificacao
 	    }
 	 	@Test
@@ -33,6 +33,6 @@ public class TestaCalculadoraV2 {
 	 		//acao
 	        int resultadoObtido = CalculadoraString.soma(parcela);
 	        //verificacao
-	        assertEquals(0,resultadoObtido);
+	        assertEquals(3+2,resultadoObtido);
 	    }
 }
